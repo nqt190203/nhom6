@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* game image */
+.game {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+
+<style>
+  .button {
+    background-color:rgb(54, 108, 161);
+  
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 6px 4px;
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Our Projects</h1>
+  <p>một vài sản phẩm đầu của nhóm</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+ 
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Hứng táo</h2>
+      <h5>Dùng phím mũi tên để di chuyển</h5>
+      <div class="game" style="height: fit-content;width:70%;padding: 10px; margin: auto; width: fit-content;"><img src="img.jpg/hungtao.jpg" alt=""></div>
+      <a href="https://scratch.mit.edu/projects/602581893"target="_blank" class="button">chơi thử</a>
+    </div>
+    <div class="card">
+      <h2>Flappy bird</h2>
+      <h5>Dùng space để bắt đầu và chơi</h5>
+      <div class="game" style="height: fit-content;width:70%;padding: 10px; margin: auto; width: fit-content;"><img src="img.jpg/fp.jpg"></div>
+      <a href="https://scratch.mit.edu/projects/604542760"target="_blank" class="button">chơi thử</a>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Knife</h2>
+      <div class="game" style="height: fit-content;width:70%;padding: 10px; margin: auto; width: fit-content;"><img src="img.jpg/knife.jpg"></div>
+      <h5>Sử dụng space để bắt đầu và chơi</h5>
+      <a href="https://scratch.mit.edu/projects/605787883"target="_blank" class="button">chơi thử</a>
+    </div>
+    <div class="card">
+      <h2>Ball</h2>
+      <div class="game"style="height: fit-content;width:70%;padding: 10px; margin: auto; width: fit-content;"><img src="img.jpg/ball.jpg">"</div>
+      <a href="https://scratch.mit.edu/projects/607052772"target="_blank"  class="button">Chơi thử</a>
+      <h5>Sử dụng space để chơi</h5>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
